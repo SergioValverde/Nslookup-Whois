@@ -27,7 +27,7 @@ restxt = dns.resolver.query(dom1,'TXT')
 
 
 for rdata in res:
-   print ('Host: ', rdata.exchange, 'has preference', rdata.preference)
+   print (rdata.exchange, 'has preference', rdata.preference)
 for rdata in resns:
     print (rdata)
 
@@ -70,7 +70,7 @@ ressoa = dns.resolver.query(dom2,'SOA')
 restxt = dns.resolver.query(dom2,'TXT')
 
 for rdata in res:
-   print ('Host: ', rdata.exchange, 'has preference', rdata.preference)
+   print (rdata.exchange, 'has preference', rdata.preference)
 for rdata in resns:
     print (rdata)
 
